@@ -1,0 +1,40 @@
+use school;
+
+db.students.insert([
+	{firstName: 'Donald',
+	lastName: 'Trump',
+	address: 'WhiteHouse'
+	grade: 5}
+	
+	{firstName: 'Donald',
+	lastName: 'Duck',
+	address: 'Duck Lane'
+	grade: 8}
+	
+	{firstName: 'Robert',
+	lastName: 'Brent',
+	address: '50 Rotherford Drive'
+	grade: 12}
+	
+	{firstName: 'Joe',
+	lastName: 'Shmoe',
+	address: '1343 Glen Ave.'
+	grade: 16}
+	
+	{firstName: 'Mike',
+	lastName: 'Harris',
+	address: '20 Park Ave..'
+	grade: 10}
+]);
+
+db.students.find(firstName: 'Donald');
+
+db.students.find(firstName: 'Donald', grade : 5);
+
+use store
+
+db.products.insert([{name: 'Desktop', price: 300},{name: 'Laptop', price: 500}])
+
+db.products.find().pretty();
+
+db.products.remove({})
